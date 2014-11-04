@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,6 +15,17 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+
+    <!-- Rendering the carousel properly -->
+    <script>
+    // Load this when the DOM is ready
+    $(function(){
+      // You used .myCarousel here. 
+      // That's the class selector not the id selector,
+      // which is #myCarousel
+      $('#myCarousel').carousel();
+    });
+    </script>
   </head>
 <!-- NAVBAR
 ================================================== -->
