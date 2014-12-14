@@ -1037,8 +1037,52 @@
 
 /* One */
 
-	#one:before {
-		background-image: url("../images/banner.jpg");
+	#oneindex:before {
+		background-image: url("../images/index.banner.jpg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+		display: block;
+		height: 15em;
+		width: 100%;
+	}
+
+	#onesofw:before {
+		background-image: url("../images/sofw.banner.jpg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+		display: block;
+		height: 15em;
+		width: 100%;
+	}
+
+	#oneelec:before {
+		background-image: url("../images/elec.banner.jpg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+		display: block;
+		height: 15em;
+		width: 100%;
+	}
+
+	#onemech:before {
+		background-image: url("../images/mech.banner.jpg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: '';
+		display: block;
+		height: 15em;
+		width: 100%;
+	}
+
+	#onedemo:before {
+		background-image: url("../images/demo.banner.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
