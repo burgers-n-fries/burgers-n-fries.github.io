@@ -46,7 +46,10 @@
 								<header class="major">
 									<h2>LeadMe - Details for Nerds</h2>
 								</header>
-								<p>Lots of words go here.</p>
+								<p>At the heart of the anklet is an ATMega328-based microcontroller with an onboard crystal and other necessary components (pull-up resistor on the reset line; decoupling capacitors).  The firmware on the board utilizes the Arduino bootleader and a custom script.  The script receives direction instructions over UART (coded with a custom protocol optimized for the anklet) and determines PWM outputs for some of five different ports, fading duty cycles to estimate the dirction as precisely as possible.  It also returns current PWM values.
+Communication is interfaced over an HC-05-based propriatery bluetooth module which is paired with an Android phone.
+Each PWM lines drives one of 5 MOSFETs on two motor contorl boards which in turn drive one of the five cellphone vibration motors spaced evenly around the device.
+The system is powered by a Lithium-Polymer cell and the voltage is regulated to 3v3.  Onboard is also a USB Li-Po charger connected to a Micro-USB port on the rear of the device.</p>
 							</div>
 						</section>
 
