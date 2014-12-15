@@ -31,8 +31,9 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#onedetails" class="active">Electrical System</a></li>
-							<li><a href="#four">Software System</a></li>
+							
 							<li><a href="#two">Mechanical System</a></li>
+							<li><a href="#four">Software System</a></li>
 							<li><a href="#three">Budget</a></li>
 						</ul>
 					</nav>
@@ -79,31 +80,32 @@
 									<li><a href="https://developers.google.com/maps/documentation/directions/" target="_blank">Google Directions API</a> to find the route to your destination</li>
 									<li><a href="https://developers.google.com/places/documentation/" target="_blank">Google Places API</a> for suggesting desinations while you are typing</li>
 									<li><a href="https://developers.google.com/maps/documentation/android/" target="_blank">Google Maps API V2</a> for basic map display and visualization</li>
-									<li><a href="https://github.com/mcxiaoke/android-volley" target="_blank">Volley</a> to seamlessly handle HTTP Requests</li>
+									<li><a href="https://github.com/mcxiaoke/android-volley" target="_blank">Volley</a> to seamlessly handle HTTP requests</li>
 									
 								</ul>
 								<p>The app was designed to have five major functions:</p>
 								<ul class="alt">
 									<li>Find a destination</li>
 									<li>Determine route to destination</li>
+									<li>Visualize route</li>
 									<li>Determine required heading</li>
 									<li>Transmitting heading to anklet</li>
 									
 								</ul>
 								<p>
-									In order to find your destination you must type it into the search bar, as you are typing the Places API offers three predicted destinations that are biased around your current location to display for you to choose between, Once you select a suggested destination, or type in your own an HTTP request is made to the Directions API. The results of this request is a JSON object with information about the route. 
+									In order to find your destination you must type it into the search bar, as you are typing the Places API offers three predicted destinations. These locations are biased around your location, and change as you continue typing. Once you select a suggested destination, or type in your own, an HTTP request is made to the Directions API. The result of this request is a JSON object with information about the route to the destination. 
 									
 								</p>
 								<p>
-									This information is parsed for two major functions, the first to visualize the route on a map, and the second is to get the cardinal direction that you must move in based on your current location and the next route waypoint. 
+									This information is parsed for two major reasons, the first to visualize the route on a map, and the second is to get the cardinal direction that you must move in based on your current location and the next route waypoint. 
 									
 								</p>
 								<p>
-									The cardinal direction is one half determining in which direction you should walk, the second requirement is to determine the direction youa re walking in. Initially information from the compass is used to get a heading, but as you move a listener adds additional GPS coordinates that allow the app to gain a more accurate understadning of the direction you are walking. With your curretn bearing, required cardinal direction and some trigonometry we can determine whether the anklet needs to guide you forward, left right or back. 
+									The cardinal direction you must go is one half of determining in which direction you should walk. The second requirement is to determine the direction you are presently facing. Initially information from the compass is used to get a heading, but as you move a listener adds additional GPS coordinates that allow the app to gain a more accurate understanding of the direction you are walking. With your current bearing, required cardinal direction and some trigonometry we can determine whether the anklet needs to guide you forward, left right or back. 
 									
 								</p>
 								<p>
-									This information is relayed to the ankley via a Bluetooth thread that runs in teh background of the app. 
+									This information is relayed to the anklet via a Bluetooth thread that runs in the background of the app. 
 									
 								</p>
 
